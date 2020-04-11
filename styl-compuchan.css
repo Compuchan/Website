@@ -10,16 +10,7 @@ html {
    Usar siempre que manipulemos gradient*/
 }
 
-:root{
-  --clr-dark: #5B5B5B;
-  --clr-light: white;
-  
-  --background: var(--clr-light);
-  --otroground: var(--clr-dark);
-}
-
 .body-compuchan{
-  background-color: var(--clr-light);
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -267,8 +258,4 @@ li a:hover{
   width: 100%;
   height: auto;  
   border-radius: 6px;
-}
-/* ----------------------    Background Mode    ---------------------------------------- */
-.dark-mode{
-  bac
 }
