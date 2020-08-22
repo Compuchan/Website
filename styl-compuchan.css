@@ -1,4 +1,13 @@
 /*  ---------compuchan------  */
+:root{
+  --rojo:#F20519;
+  --negro:#0D0D0D;
+  --amarillo: #F2E205;
+  --naranja: #F2490C;
+  --bordo: #590202;
+  --blanco: #FFFFFF;
+  --gris-claro: #F2F2F2;
+}
 html {
   /* To make use of full height of page*/
   min-height: 100%;
@@ -8,7 +17,7 @@ html {
    'background-image: linear-gradient'
    funcione correctamente sin cortarse
    Usar siempre que manipulemos gradient*/
-  font-family: "nunito light";
+  font-family: 'Graphik Light', 'Verdana', 'Helvetica', 'Arial';
 }
 
 .body-compuchan {
@@ -18,13 +27,14 @@ html {
 }
 
 .sec1 {
-  background-color: #a100d5;
+  background-color: var(--negro);
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 5px;
-  padding-right: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .bar {
@@ -37,18 +47,18 @@ html {
   position: -webkit-sticky;
   position: sticky;
   border: none;
-  border-radius: 6px;
-  background-color: rgba(87, 0, 143, 0.7);
+  width: 50vw;
 }
 
 li {
-  display: inline;
-  border-right: solid rgba(0, 0, 0, 0.1);
+  background-color: var(--rojo);
+  font-family: "Graphik Black", 'Verdana', 'Helvetica', 'Arial';
+  margin-left: 1rem;
 }
 
 li a {
   display: block;
-  width: 70px;
+  min-width: 6rem;
   padding: 10px;
   text-decoration: none;
   color: #ffffff;
@@ -56,22 +66,26 @@ li a {
 }
 
 li a:hover {
-  background-color: darkslateblue;
+  background-color: var(--naranja);
   opacity: 1;
+  transition: 1s;
 }
 
 .ttl {
   padding: 20px;
-  font-family: "monaco";
-  font-size: 50px;
+  font-family: "monaco"; /*analizar y borrar*/
+  font-size: 60px;
   text-align: left;
-  color: #f0e3ff;
-  text-shadow: 5px 4px rgba(0, 0, 0, 0.2);
+  color: var(--blanco);
+  text-shadow: 5px 4px rgba(0, 0, 0, 1);
   margin: 0;
 }
 
-.foot {
-  display: block;
+.ttlDest{
+  background-color: var(--negro);
+  color: var(--blanco);
+  font-family: 'Graphik Medium', 'Verdana', 'Helvetica', 'Arial';
+  padding: 0.2rem 0 0.2rem;
 }
 
 /* ----------------------    Login    ---------------------------------------- */
@@ -114,7 +128,7 @@ li a:hover {
   width: 35%;
   margin-left: auto;
   margin-right: auto;
-  font-family: "arial";
+  font-family: "arial", 'Verdana', 'Helvetica';
   background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
   border-radius: 10px;
   padding: 25px;
@@ -189,7 +203,7 @@ li a:hover {
 
 .img-cd {
   display: block;
-  width: 9%;
+  width: 8%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -203,8 +217,16 @@ li a:hover {
 }
 
 /* ----------------------   Interest    ---------------------------------------- */
+p{
+  font-size: 1.25rem;
+  color: var(--negro);
+}
 .inter-sec {
-  padding: 5vh;
+  padding-top: 100px;
+  padding-left: 15%;
+  padding-right: 15%;
+  min-height: 100vh;
+  margin: 0;
 }
 .galeria {
   margin: 4vh;
@@ -230,19 +252,12 @@ li a:hover {
   height: auto;
   border-radius: 6px;
 }
-/*
-footer {
-  position: absolute;
-  bottom: 0;
-  padding-top: 1rem;
-  padding-bottom: 0.5rem;
-}
-*/
-.compuchan-foot {
-  background-color: #a100d5;
 
-  position: absolute;
+.compuchan-foot {
+  background-color: var(--negro);
   bottom: 0;
+  right: 0;
+  left: 0;
   padding-top: 1rem;
   padding-bottom: 0.5rem;
 }
