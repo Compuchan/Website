@@ -36,6 +36,33 @@
     padding-right: 40px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
   }
+
+  .secLogo{
+    display: flex;
+    justify-content: flex-start;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: -webkit-sticky;
+    position: sticky;
+    border: none;
+    width: 50vw;
+  }
+
+  .logo{    
+    display: block;
+    width: 130px;
+    height: auto;
+    padding: 10px;
+  }
+
+  .name{
+    padding: 10px;   
+    display: block;
+    width: 200px;
+    height: auto;
+  }
   
   .bar {
     display: flex;
@@ -146,4 +173,34 @@
     width: 8%;
     margin-left: auto;
     margin-right: auto;
+  }
+
+/*----------------------   svg name   ------------------------*/
+  #guion{
+    opacity: 0;
+  }
+  .name:hover #guion{
+    animation-name: tictoc;
+    animation-duration: 1s;
+    -moz-animation-iteration-count: 4;
+    animation-iteration-count: 4;
+  }
+
+  @keyframes tictoc {
+    from{opacity: 1;}
+    to{opacity: 0;}
+  }
+
+  /*----------------------   svg logo   ------------------------*/
+  
+  .logo:hover #circ{
+    animation-name: blup;
+    animation-duration: 0.6s;
+    -moz-animation-iteration-count: 4;
+    animation-iteration-count: 6;
+  }
+
+  @keyframes blup {
+    from{transform: translate(0px, 0px); opacity: 1;}
+    to  {transform: translate(-100px, -1.3px); opacity: 0;}
   }
