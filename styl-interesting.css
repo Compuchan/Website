@@ -1,0 +1,206 @@
+/*  ---------compuchan------  */
+:root{
+    --rojo:#F20519;
+    --negro:#0D0D0D;
+    --amarillo: #F2E205;
+    --naranja: #F2490C;
+    --bordo: #590202;
+    --blanco: #FFFFFF;
+    --gris-claro: #F2F2F2;
+  }
+  html {
+    /* To make use of full height of page*/
+    min-height: 100%;
+    margin: 0;
+    /*super importante,
+    es el unico issue que hasta ahora hace que mi
+     'background-image: linear-gradient'
+     funcione correctamente sin cortarse
+     Usar siempre que manipulemos gradient*/
+    font-family: 'Graphik Light', 'Verdana', 'Helvetica', 'Arial';
+  }
+  
+  .body-compuchan {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .sec1 {
+    background-color: var(--negro);
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .secLogo{
+    display: flex;
+    justify-content: flex-start;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: -webkit-sticky;
+    position: sticky;
+    border: none;
+    width: 50vw;
+  }
+
+  .logo{    
+    display: block;
+    width: 130px;
+    height: auto;
+    padding: 10px;
+  }
+
+  .name{
+    padding: 10px;   
+    display: block;
+    width: 200px;
+    height: auto;
+  }
+  
+  .bar {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: -webkit-sticky;
+    position: sticky;
+    border: none;
+    width: 50vw;
+  }
+  
+  li {
+    background-color: var(--rojo);
+    font-family: "Graphik Black", 'Verdana', 'Helvetica', 'Arial';
+    margin-left: 1rem;
+  }
+  
+  li a {
+    display: block;
+    min-width: 6rem;
+    padding: 10px;
+    text-decoration: none;
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  li a:hover {
+    background-color: var(--naranja);
+    opacity: 1;
+    transition: 1s;
+  }
+  
+  .ttl {
+    padding: 20px;
+    font-family: "monaco"; /*analizar y borrar*/
+    font-size: 60px;
+    text-align: left;
+    color: var(--blanco);
+    text-shadow: 5px 4px rgba(0, 0, 0, 1);
+    margin: 0;
+  }
+
+  .inter-sec {
+    padding-top: 100px;
+    padding-left: 15%;
+    padding-right: 15%;
+    min-height: 100vh;
+    margin: 0;
+  }
+
+  .ttlDest{
+    background-color: var(--negro);
+    color: var(--blanco);
+    font-family: 'Graphik Medium', 'Verdana', 'Helvetica', 'Arial';
+    padding: 0.2rem 0 0.2rem;
+  }
+  
+  p{
+    font-size: 1.25rem;
+    color: var(--negro);
+  }
+   
+  .galeria {
+    margin: 4vh;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+    border: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+  }
+  .galeria-sub {
+    border-radius: 6px;
+    opacity: 0.6;
+  }
+  .galeria-sub:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    opacity: 1;
+    transition: 0.7s;
+  }
+  .interest-img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+  }
+
+  /*----------------------  footer  ------------------------*/
+  
+  .compuchan-foot {
+    background-color: var(--negro);
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .img-c {
+    align-content: center;
+  }
+  
+  .img-cd {
+    display: block;
+    width: 8%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+/*----------------------   svg name   ------------------------*/
+  #guion{
+    opacity: 0;
+  }
+  .name:hover #guion{
+    animation-name: tictoc;
+    animation-duration: 1s;
+    -moz-animation-iteration-count: 4;
+    animation-iteration-count: 4;
+  }
+
+  @keyframes tictoc {
+    from{opacity: 1;}
+    to{opacity: 0;}
+  }
+
+  /*----------------------   svg logo   ------------------------*/
+  
+  .logo:hover #circ{
+    animation-name: blup;
+    animation-duration: 0.6s;
+    -moz-animation-iteration-count: 4;
+    animation-iteration-count: 6;
+  }
+
+  @keyframes blup {
+    from{transform: translate(0px, 0px); opacity: 1;}
+    to  {transform: translate(-100px, -1.3px); opacity: 0;}
+  }
