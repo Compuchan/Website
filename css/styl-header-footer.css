@@ -39,44 +39,30 @@ html {
 .secLogo{
   display: flex;
   justify-content: flex-start;
-  list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
-  position: -webkit-sticky;
-  position: sticky;
   border: none;
   width: 50vw;
 }
 
-.logo{    
-  display: block;
+.logo-img, .logo-name{
+  display: grid;
+}
+
+.logo, .circulo{
+  padding: 10px;
   width: 130px;
   height: auto;
-  padding: 10px;
+  grid-column: 1;
+  grid-row: 1;
 }
 
-.circulo{    
-  display: block;
-  position: absolute;
-  width: 130px;
-  height: auto;
-  padding: 10px;
-}
-
-.name{
-  padding: 10px;   
-  display: block;
-  width: 200px;
-  height: auto;
-}
-
-.guion{
-  display: block;
-  position: absolute;
+.name, .guion{
   padding: 10px;
   width: 200px;
   height: auto;
+  grid-column: 1;
+  grid-row: 1;
 }
 
 .bar {
@@ -191,10 +177,7 @@ p{
 }
 
 /*----------------------   svg name   ------------------------*/
-.guion{
-  opacity: 0;
-}
-.name:hover .guion{
+.guion:hover{
   animation-name: tictoc;
   animation-duration: 1s;
   -moz-animation-iteration-count: 4;
