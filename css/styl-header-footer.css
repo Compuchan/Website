@@ -98,6 +98,7 @@ li a:hover {
 
 .compuchan-foot {
   background-color: var(--negro);
+  color: white;
   bottom: 0;
   right: 0;
   left: 0;
