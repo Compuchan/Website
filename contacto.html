@@ -16,6 +16,8 @@
 	<meta property="og:image" content="" />
 	
 	 <link rel="stylesheet" href="./css/styl-header-footer.css">
+	 <script src="./js/jquery-3.5.1.js"></script>
+	 <script src="./js/contacto.js"></script>
 </head>
 
 <body class="body-compuchan">
@@ -43,24 +45,24 @@
 	<section>
 
 		<h2>Contactanos</h2>
-		<form action="" method="POST">
+		<form action="" method="POST" id="contact-form">
 
 			<label for="">Nombre:
-				<input name="nombre" type="text">
+				<input name="nombre" type="text" id="name-input">
 			</label>
 			<label for="">Empresa:
-				<input name="empresa" type="text">
+				<input name="empresa" type="text" id="enterp-input">
 			</label>
 			<label for="">E-mail:
-				<input name="email" type="email">
+				<input name="email" type="email" id="email-input">
 			</label>
 			<label for="">teléfono:
-				<input name="telefono" type="tel">
+				<input name="telefono" type="phone" id="phone-input">
 			</label>
 			<label for="">Mensaje:
-				<textarea name="mensaje" id="" cols="30" rows="10"></textarea>
+				<textarea name="mensaje" id="description-input" cols="30" rows="10"></textarea>
 			</label>
-			<button>Cuentanos</button>
+			<button type="button" onClick="submitToAPI(event)">Cuentanos</button>
 
 		</form>
 
