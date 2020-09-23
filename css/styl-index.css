@@ -1,0 +1,43 @@
+.main-sec{
+	display: grid;
+	grid-template-rows: 50fr 35fr 15fr;
+	font-size: 18px;
+	width: 80%;
+	margin: auto;
+}
+
+.portada img{
+	width: 100%;
+}
+
+h1, h2, h3{
+	text-align: center;
+}
+
+.paginas-web{
+	align-self: center;
+}
+
+.pag-web-content{
+	display: grid;
+	grid-template-columns: 35fr 65fr;
+	column-gap: 0px;
+}
+
+.pag-web-content p{
+	justify-self: left;
+	align-self: center;
+}
+.pag-web-content p a{
+	display: inline-block;
+	text-decoration: none;
+	color: whitesmoke;
+	background-color: #f04150;
+	margin-top: 1%;
+	padding: 1%;
+	border-radius: 10%;
+}
+
+.client-logos img{
+	width: 25%;
+}
