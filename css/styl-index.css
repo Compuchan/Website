@@ -21,12 +21,12 @@ h1, h2, h3{
 .pag-web-content{
 	display: grid;
 	grid-template-columns: 35fr 65fr;
-	column-gap: 0px;
 }
 
 .pag-web-content p{
 	justify-self: left;
 	align-self: center;
+	margin-left: 30px ;
 }
 .pag-web-content p a{
 	display: inline-block;
