@@ -1,6 +1,6 @@
 .main-sec{
 	display: grid;
-	grid-template-rows: 50fr 35fr 15fr;
+	grid-template-rows: 30fr 40fr 20fr 10fr;
 	font-size: 18px;
 	width: 80%;
 	margin: auto;
@@ -11,6 +11,10 @@
 }
 
 h1, h2, h3{
+	text-align: center;
+}
+
+.q-somos{
 	text-align: center;
 }
 
