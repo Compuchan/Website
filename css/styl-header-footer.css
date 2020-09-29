@@ -42,6 +42,7 @@ html {
 
 .logo-img, .logo-name{
   display: grid;
+  align-content: center;
 }
 
 .logo, .circulo{
