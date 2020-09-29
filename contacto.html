@@ -49,29 +49,29 @@
 	<section class="main-sec">
 		<div class="container">
 			<h1>Contactanos</h1>
-			<form>
+			<form action="" method="POST" id="contact-form">
 			  <div>
-				<input type="text" name="" id="" required />
+				<input name="nombre" type="text" id="name-input" required />
 				<label for="">*Nombre</label>
 			  </div>
 			  <div>
-				<input type="text" name="" id="" required />
+				<input name="empresa" type="text" id="enterp-input" required />
 				<label for="">*Empresa o web actual</label>
 			  </div>
 			  <div>
-				<input type="email" name="" id="" required />
+				<input name="email" type="email" id="email-input" required />
 				<label for="">*E-mail</label>
 			  </div>
 			  <div>
-				<input type="tel" name="" id="" required />
+				<input name="telefono" type="tel" id="phone-input" required />
 				<label for="">*Teléfono</label>
 			  </div>
 			  <div class="text-area">
-				<textarea required></textarea>
+				<textarea name="mensaje" id="description-input" required></textarea>
 				<label for="">*Mensaje</label>
 			  </div>
 			  <div class="button">
-				<button type="submit">Cuéntanos</button>
+				<button type="button" onClick="submitToAPI(event)">Cuéntanos</button>
 			  </div>
 			</form>
 		</div>
