@@ -91,7 +91,7 @@ li a {
 li a:hover {
   background-color: var(--naranja);
   opacity: 1;
-  transition: 1s;
+  transition: 0.4s;
 }
 
 /*----------------------  footer  ------------------------*/

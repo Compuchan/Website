@@ -46,30 +46,35 @@
 		</nav>
 	</header>
 
-	<section>
-
-		<h1>Contactanos</h1>
-		<form action="" method="POST" id="contact-form">
-
-			<label for="">Nombre:
-				<input name="nombre" type="text" id="name-input">
-			</label>
-			<label for="">Empresa:
-				<input name="empresa" type="text" id="enterp-input">
-			</label>
-			<label for="">E-mail:
-				<input name="email" type="email" id="email-input">
-			</label>
-			<label for="">teléfono:
-				<input name="telefono" type="phone" id="phone-input">
-			</label>
-			<label for="">Mensaje:
-				<textarea name="mensaje" id="description-input" cols="30" rows="10"></textarea>
-			</label>
-			<button type="button" onClick="submitToAPI(event)">Cuentanos</button>
-
-		</form>
-
+	<section class="main-sec">
+		<div class="container">
+			<h1>Contactanos</h1>
+			<form>
+			  <div>
+				<input type="text" name="" id="" required />
+				<label for="">*Nombre</label>
+			  </div>
+			  <div>
+				<input type="text" name="" id="" required />
+				<label for="">*Empresa o web actual</label>
+			  </div>
+			  <div>
+				<input type="email" name="" id="" required />
+				<label for="">*E-mail</label>
+			  </div>
+			  <div>
+				<input type="tel" name="" id="" required />
+				<label for="">*Teléfono</label>
+			  </div>
+			  <div class="text-area">
+				<textarea required></textarea>
+				<label for="">*Mensaje</label>
+			  </div>
+			  <div class="button">
+				<button type="submit">Cuéntanos</button>
+			  </div>
+			</form>
+		</div>
 	</section>
 	
 	<footer class="compuchan-foot">
