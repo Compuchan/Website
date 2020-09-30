@@ -89,7 +89,7 @@ button {
 }
 
 button:hover {
-  background-color: #F2490C;
+  background-color: #00a023;
 }
 
 
@@ -105,13 +105,19 @@ label {
 input:focus~label, textarea:focus~label, input:valid~label, textarea:valid~label {
   top: 0;
   left: 0;
-  color: #F2490C;
+  color: #00a023;
   font-size: 16px;
   font-weight: bold;
 }
 
 input:focus, textarea:focus, input:valid, textarea:valid {
-  border-bottom: 1px solid #F2490C;
+  border-bottom: 1px solid #00a023;
+}
+
+div p{
+  font-size: 0.6em;
+  margin: 1%;
+  color: #fc4700;
 }
 
 /* Responsive codes */
