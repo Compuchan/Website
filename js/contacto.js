@@ -1,44 +1,45 @@
 function submitToAPI(e) {
     e.preventDefault();
+
     const URL = "https://kg0114k1ek.execute-api.us-east-1.amazonaws.com/beta/contact-us";
-    const destinatario = "heroofwink" 
+
+    const name = document.querySelector("#name-input").value;
+    const empresa = document.querySelector("#enterp-input").value;
+    const phone = document.querySelector("#phone-input").value;
+    const email = document.querySelector("#email-input").value;
+    const desc = document.querySelector("#description-input").value;
+
+
     /// VALIDA CAMPO NOMBRE
-    var Namere = /[A-Za-z]{1}[A-Za-z]/;
-    if (!Namere.test($("#name-input").val())) {
+    let Namere = /[A-Za-z]{1}[A-Za-z]/;
+    if (!Namere.test(name)) {
         alert ("El nombre debe ser de 2 o mas caracteres");
-        return;
+        return
     }
     /// VALIDA CAMPO EMPRESA
-    var Enterprise = /[A-Za-z]{1}[A-Za-z]/;
-    if (!Enterprise.test($("#enterp-input").val())) {
+    let Enterprise = /[A-Za-z]{1}[A-Za-z]/;
+    if (!Enterprise.test(empresa)) {
         alert ("La empresa debe ser de 2 o mas caracteres");
-        return;
+       return
     }
     /// VALIDA CAMPO TELEFONO
-    var mobilere = /[0-9]{8}/;
-    if (!mobilere.test($("#phone-input").val())) {
+    let mobilere = /[0-9]{8}/;
+    if (!mobilere.test(phone)) {
         alert ("Ingrese un numero telefonico valido");
-        return;
+       return
     }
     /// VALIDA CAMPO EMAIL
-    if ($("#email-input").val()=="") {
-        alert ("Ingrese una direccion de correo");
-        return;
-    }   else{
-        var reeamil = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,6})?$/;
-        if (!reeamil.test($("#email-input").val())) {
+        let reeamil = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,6})?$/;
+        if (!reeamil.test(email) || email == "") {
             alert ("Ingrese una direccion de correo valida");
-            return;
+            return
         }
-    }
+    
+    
+    if(Namere.test(name),Enterprise.test(Enterprise),mobilere.test(phone),reeamil.test(email) == true && email != true) {
 
-    var name = $("#name-input").val();
-    var empresa = $("#enterp-input").val();
-    var phone = $("#phone-input").val();
-    var email = $("#email-input").val();
-    var desc = $("#description-input").val();
-    var data = {
-        receiver: destinatario,
+
+    let data = {
         name : name,
         empresa: empresa,
         phone : phone,
@@ -63,3 +64,4 @@ function submitToAPI(e) {
         alert("Su consulta fue enviada, pronto nos pondremos en contacto");
     });
   }
+}

@@ -1,9 +1,12 @@
 .main-sec {
 	display: grid;
-	grid-template-rows: 30fr 40fr 20fr 10fr;
 	font-size: 18px;
 	width: 80%;
 	margin: auto;
+}
+
+.main-sec > div{
+	padding: 1% 0 2% 0;
 }
 
 .portada img {
@@ -143,11 +146,15 @@ h1, h2, h3 {
 .pag-web-content p a {
 	display: inline-block;
 	text-decoration: none;
-	color: whitesmoke;
-	background-color: #f04150;
-	margin-top: 1%;
+	background-color: #F20519;
+	outline: none;
+	margin: 1% 0;
 	padding: 1%;
-	border-radius: 10%;
+	width: 15%;
+	border-radius: 0.5em;
+	border: none;
+	color: #fff;
+	cursor: pointer;
 }
 
 .client-logos img {
