@@ -16,17 +16,20 @@
 	<meta property="og:image" content="./imgs-c/img-index/banner.jpg"/>
 	
 	<link rel="shortcut icon" href="./imgs-c/favicon/favicon.png" type="image/png"/>
+	
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
 		integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous"/>
-	<link rel="stylesheet" href="./css/styl-header-footer.css"/>
+	<link rel="stylesheet" href="./css/styl-master.css"/>
+	<link rel="stylesheet" href="./css/styl-header.css"/>
 	<link rel="stylesheet" href="./css/styl-contacto.css"/>
+	<link rel="stylesheet" href="./css/styl-footer.css"/>
 
 	 <script src="./js/jquery-3.5.1.js"></script>
 	 <script src="./js/contacto.js"></script>
 </head>
 
-<body class="body-compuchan">
-	<header class="sec1">
+<body>
+	<header class="main-header">
 		<div class="secLogo">
 			<div class="logo-img">
 				<img src="./imgs-c/compuchanRojo.svg" alt="" class="logo">
@@ -51,26 +54,26 @@
 			<h1>Contactanos</h1>
 			<form action="" method="POST" id="contact-form">
 			  <div>
-				<input name="nombre" type="text" id="name-input" required />
-				<label for="">*Nombre</label>
+				  <input name="nombre" type="text" id="name-input" required />
+				  <label for="">*Nombre</label>
 			  </div>
 			  <div>
-				<input name="empresa" type="text" id="enterp-input" required />
-				<label for="">*Empresa o web actual</label>
+				  <input name="empresa" type="text" id="enterp-input" required />
+				  <label for="">*Empresa o web actual</label>
 			  </div>
 			  <div>
-				<input name="email" type="email" id="email-input" required />
-				<label for="">*E-mail</label>
+				  <input name="email" type="email" id="email-input" required />
+				  <label for="">*E-mail</label>
 			  </div>
 			  <div>
-				<input name="telefono" type="tel" id="phone-input" required />
-				<label for="">*Teléfono</label>
+				  <input name="telefono" type="tel" id="phone-input" required />
+				  <label for="">*Teléfono</label>
 			  </div>
-			  <div class="text-area">
-				<textarea name="mensaje" id="description-input" required></textarea>
-				<label for="">*Mensaje</label>
+			  <div class="textarea-container">
+				  <textarea name="mensaje" id="description-input" required></textarea>
+				  <label for="">*Mensaje</label>
 			  </div>
-			  <div class="button">
+			  <div class="button-container">
 				<button type="button" onClick="submitToAPI(event)">Cuéntanos</button>
 			  </div>
 			</form>
