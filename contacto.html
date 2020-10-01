@@ -23,8 +23,6 @@
 	<link rel="stylesheet" href="./css/styl-header.css"/>
 	<link rel="stylesheet" href="./css/styl-contacto.css"/>
 	<link rel="stylesheet" href="./css/styl-footer.css"/>
-
-	 <script src="./js/contacto.js"></script>
 </head>
 
 <body>
@@ -53,24 +51,24 @@
 			<h1>Contactanos</h1>
 			<form action="" method="POST" id="contact-form">
 			  <div>
-				  <input name="nombre" type="text" id="name-input" required />
+				  <input name="nombre" type="text" id="name-input" required onchange="regexValidator()"/>
 				  <label for="">*Nombre</label>
-				  <p>El nombre debe ser de 2 o mas caracteres</p>
+				  <p class="error-name">El nombre debe ser de 2 o mas caracteres</p>
 			  </div>
 			  <div>
-				  <input name="empresa" type="text" id="enterp-input" required />
+				  <input name="empresa" type="text" id="enterp-input" required onchange="regexValidator()"/>
 				  <label for="">*Empresa o web actual</label>
-				  <p>La empresa debe ser de 2 o mas caracteres</p>
+				  <p class="error-empresa">La empresa debe ser de 2 o mas caracteres</p>
 			  </div>
 			  <div>
-				  <input name="email" type="email" id="email-input" required />
+				  <input name="email" type="email" id="email-input" required onchange="regexValidator()"/>
 				  <label for="">*E-mail</label>
-				  <p>Ingrese una direccion de correo valida</p>
+				  <p class="error-email">Ingrese una direccion de correo valida</p>
 			  </div>
 			  <div>
-				  <input name="telefono" type="tel" id="phone-input" required />
+				  <input name="telefono" type="tel" id="phone-input" required onchange="regexValidator()"/>
 				  <label for="">*Teléfono</label>
-				  <p>Ingrese un numero telefonico valido</p>
+				  <p class="error-tel">Ingrese un numero telefonico valido</p>
 			  </div>
 			  <div class="textarea-container">
 				  <textarea name="mensaje" id="description-input" required></textarea>
@@ -89,4 +87,5 @@
 		</div>
 	</footer>
 </body>
+<script src="./js/contacto.js"></script>
 </html>
