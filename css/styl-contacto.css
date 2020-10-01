@@ -118,7 +118,7 @@ div p {
   display:none;
 }
 
-/* -------------------dinamic styles--------------------------------- */
+/* ----------------------------- Dinamic Styles --------------------------------- */
 
 /* labels */
 input:focus~.valid-msg, textarea:focus~.valid-msg, input:valid~.valid-msg, textarea:valid~.valid-msg {
@@ -136,8 +136,8 @@ input:focus~.valid-msg, textarea:focus~.valid-msg, input:valid~.valid-msg, texta
   color: #fc4700;
 }
 /* input */
-.error-input {
-  border-bottom: 1px solid #999;
+.error-input:focus, .error-input:valid .error-input:invalid {
+  border-bottom: 1px solid #fc4700;
 }
 
 
