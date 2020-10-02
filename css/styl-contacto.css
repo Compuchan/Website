@@ -135,10 +135,7 @@ input:focus~.valid-msg, textarea:focus~.valid-msg, input:valid~.valid-msg, texta
   margin: 1%;
   color: #fc4700;
 }
-/* input */
-.error-input:focus, .error-input:valid .error-input:invalid {
-  border-bottom: 1px solid #fc4700;
-}
+
 
 
 /* Responsive codes */
