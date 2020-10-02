@@ -43,6 +43,20 @@ SubmitButton.addEventListener("click", checkSubmit);
 
 
 
+
+let inputList = [names, enterprise, email, tel, message];
+
+inputList.forEach(element => {
+	element.classList.add("error-msg")
+});
+	
+
+
+
+
+
+
+
 function validOnWrite() {
 
 	if (regexName.test(names.value) == false && names.value != "") {
