@@ -32,11 +32,11 @@ const regexTel = /[0-9]{8}/;
 
 
 // EventListeners
-names.addEventListener("change", validOnWrite);
-enterprise.addEventListener("change", validOnWrite);
-email.addEventListener("change", validOnWrite);
-tel.addEventListener("change", validOnWrite);
-message.addEventListener("change", validOnWrite);
+names.addEventListener("input", validOnWrite);
+enterprise.addEventListener("input", validOnWrite);
+email.addEventListener("input", validOnWrite);
+tel.addEventListener("input", validOnWrite);
+message.addEventListener("input", validOnWrite);
 
 SubmitButton.addEventListener("click", checkSubmit);
 

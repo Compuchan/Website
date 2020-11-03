@@ -131,7 +131,7 @@ input:focus~.valid-msg, textarea:focus~.valid-msg, input:valid~.valid-msg, texta
 /* labels */
 .error-msg{
   display: inline;
-  font-size: 0.6em;
+  font-size: 0.55em;
   margin: 1%;
   color: #fc4700;
 }
