@@ -11,7 +11,11 @@
 html {
   min-height: 100%;
   margin: 0;
-  font-family: 'Verdana', 'Helvetica', 'Arial';
+  font-family: 'Roboto', sans-serif;
+  line-height: 22px;
+  font-weight: 400;
+  font-size: 1.2em;
+  background-color: #e7e7de;
 }
 
 .body-compuchan {
@@ -20,14 +24,23 @@ html {
   box-sizing: border-box;
 }
 
+h1{
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 78px;
+  margin: 0;
+}
+
 .sec1 {
-  background-color: var(--negro);
+  background-color: #008891;
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding: 40px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -71,12 +84,14 @@ html {
   position: sticky;
   border: none;
   width: 50vw;
+  align-items: center;
 }
 
 li {
-  background-color: var(--rojo);
-  font-family: 'Verdana', 'Helvetica', 'Arial';
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
   margin-left: 1rem;
+  font-size: 0.9rem;
 }
 
 li a {
@@ -89,15 +104,19 @@ li a {
 }
 
 li a:hover {
-  background-color: var(--naranja);
+  background-color: #00587a;
   opacity: 1;
   transition: 1s;
+}
+
+section{
+  margin: 64px;
 }
 
 /*----------------------  footer  ------------------------*/
 
 .compuchan-foot {
-  background-color: var(--negro);
+  background-color: #0f3057;
   bottom: 0;
   right: 0;
   left: 0;
