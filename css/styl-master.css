@@ -1,11 +1,10 @@
 :root {
-  --rojo: #F20519;
-  --negro: #0D0D0D;
-  --amarillo: #F2E205;
-  --naranja: #F2490C;
-  --bordo: #590202;
+  --turquesa: #008891;
+  --beige: #e7e7de;
+  --azul-claro: #00587a;
+  --azul-oscuro: #0f3057;
   --blanco: #FFFFFF;
-  --gris-claro: #F2F2F2;
+  --negro: #0D0D0D;
 }
 
 * {

@@ -3,28 +3,50 @@
 
 <head>
 	<title>Contactanos</title>
-	<meta charset="UTF-8"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-	<meta name="keywords" content="Compuchan, ERP, pagina web"/>
-	<meta name="description" content="Creando Paginas y Aplicaciones Web sin limite"/>
+	<meta name="keywords" content="Compuchan, ERP, pagina web" />
+	<meta name="description" content="Creando Paginas y Aplicaciones Web sin limite" />
 
-	<meta property="og:title" content="CompuChan - Contacto"/>
-	<meta property="og:type" content="Creando Paginas y Aplicaciones Web sin limite"/>
-	<meta property="og:url" content="https://compuchan.com/contacto.html"/>
-	<meta property="og:image" content="./imgs-c/img-index/banner.jpg"/>
-	
-	<link rel="shortcut icon" href="./imgs-c/favicon/favicon.png" type="image/png"/>
-	
+	<meta property="og:title" content="CompuChan - Contacto" />
+	<meta property="og:type" content="Creando Paginas y Aplicaciones Web sin limite" />
+	<meta property="og:url" content="https://compuchan.com/contacto.html" />
+	<meta property="og:image" content="./imgs-c/img-index/banner.jpg" />
+
+	<link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+	<link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="./favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="./favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="./favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="./favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="./favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="./favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+	<link rel="manifest" href="./favicon/manifest.json">
+	<meta name="msapplication-TileImage" content="./favicon/ms-icon-144x144.png">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="theme-color" content="#ffffff">
+	<link rel="shortcut icon" href="./favicon/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="./favicon/favicon.ico" type="image/x-icon">
+
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Roboto&display=swap"
+		rel="stylesheet">
+
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-		integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous"/>
-	<link rel="stylesheet" href="./css/styl-master.css"/>
-	<link rel="stylesheet" href="./css/styl-header.css"/>
-	<link rel="stylesheet" href="./css/styl-contacto.css"/>
-	<link rel="stylesheet" href="./css/styl-footer.css"/>
+		integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+		crossorigin="anonymous" />
+	<link rel="stylesheet" href="./css/styl-master.css" />
+	<link rel="stylesheet" href="./css/styl-header.css" />
+	<link rel="stylesheet" href="./css/styl-contacto.css" />
+	<link rel="stylesheet" href="./css/styl-footer.css" />
 
-	 <script src="./js/contacto.js"></script>
+	<script src="./js/contacto.js"></script>
 </head>
 
 <body>
@@ -52,37 +74,38 @@
 		<div class="container">
 			<h1>Contactanos</h1>
 			<form action="" method="POST" id="contact-form">
-			  <div>
-				  <input name="nombre" type="text" id="name-input" required />
-				  <label for="">*Nombre</label>
-			  </div>
-			  <div>
-				  <input name="empresa" type="text" id="enterp-input" required />
-				  <label for="">*Empresa o web actual</label>
-			  </div>
-			  <div>
-				  <input name="email" type="email" id="email-input" required />
-				  <label for="">*E-mail</label>
-			  </div>
-			  <div>
-				  <input name="telefono" type="tel" id="phone-input" required />
-				  <label for="">*Teléfono</label>
-			  </div>
-			  <div class="textarea-container">
-				  <textarea name="mensaje" id="description-input" required></textarea>
-				  <label for="">*Mensaje</label>
-			  </div>
-			  <div class="button-container">
-				<button type="button" onClick="submitToAPI(event)">Cuéntanos</button>
-			  </div>
+				<div>
+					<input name="nombre" type="text" id="name-input" required />
+					<label for="">*Nombre</label>
+				</div>
+				<div>
+					<input name="empresa" type="text" id="enterp-input" required />
+					<label for="">*Empresa o web actual</label>
+				</div>
+				<div>
+					<input name="email" type="email" id="email-input" required />
+					<label for="">*E-mail</label>
+				</div>
+				<div>
+					<input name="telefono" type="tel" id="phone-input" required />
+					<label for="">*Teléfono</label>
+				</div>
+				<div class="textarea-container">
+					<textarea name="mensaje" id="description-input" required></textarea>
+					<label for="">*Mensaje</label>
+				</div>
+				<div class="button-container">
+					<button type="button" onClick="submitToAPI(event)">Cuéntanos</button>
+				</div>
 			</form>
 		</div>
 	</section>
-	
+
 	<footer class="compuchan-foot">
 		<div class="img-c">
 			<img src="./imgs-c/CompuchanSvg.svg" alt="Logo CompuChan" class="img-cd">
 		</div>
 	</footer>
 </body>
+
 </html>
