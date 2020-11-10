@@ -1,0 +1,18 @@
+h1{
+    text-align: center;
+}
+
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #F20519;
+    outline: none;
+    margin: 1%;
+    padding: 1%;
+    width: 7%;
+    border-radius: 0.5em;
+    border: none;
+    color: #fff;
+    cursor: pointer
+}

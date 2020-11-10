@@ -1,72 +1,32 @@
-:root{
-  --rojo:#F20519;
-  --negro:#0D0D0D;
-  --amarillo: #F2E205;
-  --naranja: #F2490C;
-  --bordo: #590202;
-  --blanco: #FFFFFF;
-  --gris-claro: #F2F2F2;
-}
-
-html {
-  min-height: 100%;
-  margin: 0;
-  font-family: 'Roboto', sans-serif;
-  line-height: 22px;
-  font-weight: 400;
-  font-size: 1.2em;
-  background-color: #e7e7de;
-}
-
-.body-compuchan {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-h1{
-  color: #ffffff;
-  font-family: 'Montserrat', sans-serif;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 36px;
-  line-height: 78px;
-  margin: 0;
-}
-
-.sec1 {
+.main-header {
   background-color: #008891;
-  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px;
+  padding-left: 2%;
+  padding-right: 2%;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .secLogo{
   display: flex;
-  justify-content: flex-start;
-  margin: 0;
-  padding: 0;
-  border: none;
-  width: 50vw;
+  width: 50%;
 }
 
 .logo-img, .logo-name{
   display: grid;
+  align-content: center;
 }
 
 .logo, .circulo{
-  padding: 10px;
+  padding: 2% 5%;
   width: 130px;
-  height: auto;
   grid-column: 1;
   grid-row: 1;
 }
 
 .name, .guion{
-  padding: 10px;
+  padding: 2% 0;
   width: 200px;
   height: auto;
   grid-column: 1;
@@ -106,36 +66,11 @@ li a {
 li a:hover {
   background-color: #00587a;
   opacity: 1;
-  transition: 1s;
-}
-
-section{
-  margin: 64px;
-}
-
-/*----------------------  footer  ------------------------*/
-
-.compuchan-foot {
-  background-color: #0f3057;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  padding-top: 1rem;
-  padding-bottom: 0.5rem;
-}
-
-.img-c {
-  align-content: center;
-}
-
-.img-cd {
-  display: block;
-  width: 8%;
-  margin-left: auto;
-  margin-right: auto;
+  transition: 0.3s;
 }
 
 /*----------------------   svg name   ------------------------*/
+
 .guion:hover{
   animation-name: tictoc;
   animation-duration: 1s;

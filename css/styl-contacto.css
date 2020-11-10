@@ -1,0 +1,127 @@
+
+.main-sec {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+50,9105ff+50,9105ff+50 */
+  background: #ffffff;
+  /* Old browsers */
+  background: -moz-linear-gradient( -45deg, #ffffff 50%, #F20519 50%, #F20519 50%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient( -45deg, #ffffff 50%, #F20519 50%, #F20519 50%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient( 135deg, #ffffff 50%, #F20519 50%, #F20519 50%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#9105ff', GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
+  background-repeat: no-repeat;
+  background-position: center;
+  font-size: 18px;
+  padding: 5%;
+}
+
+.container {
+  margin: 0 auto;
+  width: 50%;
+  min-width: 600px;
+  height: 70%;
+  min-height: 520px;
+  background: #fff;
+  padding: 4%;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.151);
+  border-radius: 0.5em;
+}
+
+h1 {
+  font-weight: bold;
+  margin: 0 0 6%;
+  padding: 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 50fr 50fr;
+  grid-template-rows: repeat(4, 25fr);
+  column-gap: 10%;
+}
+
+form div {
+  position: relative;
+}
+
+input {
+  outline: none;
+  padding: 8% 4% 2% 4%;
+  font-size: 16px;
+}
+
+.textarea-container {
+  grid-column: 1/ span 2;
+}
+
+textarea {
+  padding: 4% 6%;
+  font-size: 16px;
+}
+
+.button-container {
+  grid-column: 1/ span 2;
+  align-self: center;
+  justify-self: center;
+  width: 25%;
+}
+
+input, textarea {
+  width: 100%;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #999;
+}
+
+button {
+  background-color: #F20519;
+  outline: none;
+  padding: 10%;
+  width: 100%;
+  border-radius: 0.5em;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #F2490C;
+}
+
+
+label {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  color: #999;
+  transition: 0.3s;
+  pointer-events: none;
+}
+
+input:focus~label, textarea:focus~label, input:valid~label, textarea:valid~label {
+  top: 0;
+  left: 0;
+  color: #F2490C;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+input:focus, textarea:focus, input:valid, textarea:valid {
+  border-bottom: 1px solid #F2490C;
+}
+
+/* Responsive codes */
+
+@media only screen and (max-width: 720px) {
+  .container {
+    width: 300px;
+    padding: 25px;
+  }
+  input, textarea, label {
+    font-size: 18px;
+  }
+}

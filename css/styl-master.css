@@ -1,0 +1,14 @@
+:root {
+  --rojo: #F20519;
+  --negro: #0D0D0D;
+  --amarillo: #F2E205;
+  --naranja: #F2490C;
+  --bordo: #590202;
+  --blanco: #FFFFFF;
+  --gris-claro: #F2F2F2;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}

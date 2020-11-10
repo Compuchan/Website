@@ -1,0 +1,20 @@
+.compuchan-foot {
+  background-color: var(--negro);
+  color: white;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.img-c {
+  align-content: center;
+}
+
+.img-cd {
+  display: block;
+  width: 8%;
+  margin-left: auto;
+  margin-right: auto;
+}
