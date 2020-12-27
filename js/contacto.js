@@ -4,6 +4,7 @@ const enterprise = document.querySelector("#enterp-input");
 const email = document.querySelector("#email-input");
 const tel = document.querySelector("#phone-input");
 const message = document.querySelector("#description-input");
+const recaptchaElement = document.querySelector("#recaptcha-button");
 
 //labels
 const labelNames = document.querySelector("#label-name");

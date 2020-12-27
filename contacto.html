@@ -23,6 +23,13 @@
 	<link rel="stylesheet" href="./css/styl-header.css"/>
 	<link rel="stylesheet" href="./css/styl-contacto.css"/>
 	<link rel="stylesheet" href="./css/styl-footer.css"/>
+	<script src="https://www.google.com/recaptcha/api.js"></script>
+	<script>
+		function ccb(response) {
+			document.getElementById("submit-btn").removeAttribute("disabled");
+		   	window.response=response
+		}
+	</script>
 
 	
 
@@ -79,7 +86,9 @@
 				  <p id="error-message">Por favor, describanos lo que necesite. (no deje el mensaje vacio)</p>
 			  </div>
 			  <div class="button-container">
-				<button id="submit-btn" type="button">Cuéntanos</button>
+				<div id="recaptcha-button" class="g-recaptcha"
+				data-sitekey="6LcfVdUZAAAAAEKSs90dwk2kCpTQv9BJQWGmq8ua" data-callback="ccb"></div>
+				<button id="submit-btn" disabled type="button">Cuéntanos</button>
 				<p id="ok-message">Su Consulta fue enviada, pronto nos pondermos en contacto!</p>
 			  </div>
 			</form>
