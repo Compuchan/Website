@@ -92,6 +92,9 @@ button:hover {
   background-color: var(--azul-oscuro);
 }
 
+button:disabled {
+  background-color: var(--desactivado);
+}
 
 label {
   position: absolute;

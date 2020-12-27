@@ -46,13 +46,15 @@
 	<link rel="stylesheet" href="./css/styl-contacto.css" />
 	<link rel="stylesheet" href="./css/styl-footer.css" />
 
-	<script src="https://www.google.com/recaptcha/api.js"></script>
-	<script>
-		function ccb(response) {
-			document.getElementById("submit-btn").removeAttribute("disabled");
-		   	window.response=response
+	<!-- <script src="https://www.google.com/recaptcha/api.js"></script> -->
+	<!-- <script>
+		function ccb(tokken) {
+			document.getElementById("submit-button").removeAttribute("disabled");
+			window.tokken=tokken
+			console.log(window.tokken)   
 		}
-	</script>
+	</script> -->
+	<script src="https://www.google.com/recaptcha/api.js?render=6Le4_uIZAAAAAFyxKQdbRq-s-KZbY69JdptF0dNw"></script>
 	<script src="./js/contacto.js"></script>
 </head>
 
@@ -103,13 +105,9 @@
 					<label for="">*Mensaje</label>
 				</div>
 				<div class="button-container">
-					<button type="button" onClick="submitToAPI(event)">Cuéntanos</button>
-				</div>
-				<div class="button-container">
-				  <div id="recaptcha-button" class="g-recaptcha"
-				  data-sitekey="6LcfVdUZAAAAAEKSs90dwk2kCpTQv9BJQWGmq8ua" data-callback="ccb"></div>
-				  <button id="submit-btn" disabled type="button">Cuéntanos</button>
-				  <p id="ok-message">Su Consulta fue enviada, pronto nos pondermos en contacto!</p>
+				  <!-- <div id="recaptcha-button" class="g-recaptcha"
+				  data-sitekey="6Le4_uIZAAAAAFyxKQdbRq-s-KZbY69JdptF0dNw" data-callback="ccb"></div> -->
+				  <button id="submit-button" type="button" onClick="submitToAPI(event)">Cuéntanos</button>
 				</div>
 			</form>
 		</div>
