@@ -3,11 +3,11 @@
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+50,9105ff+50,9105ff+50 */
   background: #ffffff;
   /* Old browsers */
-  background: -moz-linear-gradient( -45deg, #ffffff 50%, #F20519 50%, #F20519 50%);
+  background: -moz-linear-gradient( -45deg, #ffffff 50%, var(--azul-claro) 50%, var(--azul-claro) 50%);
   /* FF3.6-15 */
-  background: -webkit-linear-gradient( -45deg, #ffffff 50%, #F20519 50%, #F20519 50%);
+  background: -webkit-linear-gradient( -45deg, #ffffff 50%, var(--azul-claro) 50%, var(--azul-claro) 50%);
   /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient( 135deg, #ffffff 50%, #F20519 50%, #F20519 50%);
+  background: linear-gradient( 135deg, #ffffff 50%, var(--azul-claro) 50%, var(--azul-claro) 50%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#9105ff', GradientType=1);
   /* IE6-9 fallback on horizontal gradient */
@@ -78,7 +78,7 @@ input, textarea {
 }
 
 button {
-  background-color: #F20519;
+  background-color: var(--azul-claro);
   outline: none;
   padding: 10%;
   width: 100%;
@@ -89,8 +89,7 @@ button {
 }
 
 button:hover {
-  background-color: #6f3ea8;
-  box-shadow: -3px 0 3px 1px #6f3ea8;
+  background-color: var(--azul-oscuro);
 }
 
 
@@ -113,26 +112,13 @@ div p {
 .on-writing-label {
   top: 0;
   left: 0;
-  color: #636363;
+  color: var(--negro);
   font-size: 16px;
   font-weight: bold;
 }
 
-.label-ok {
-  top: 0;
-  left: 0;
-  color: #00a023;
-  font-size: 16px;
-  font-weight: bold;
-}
-
-/* inputs */
-.on-writing-border {
-  border-bottom: 1px solid #636363;
-}
-
-.input-ok{
-  border-bottom: 1px solid #00a023;
+input:focus, textarea:focus, input:valid, textarea:valid {
+  border-bottom: 1px solid var(--negro);
 }
 
 .error-input{

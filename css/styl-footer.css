@@ -1,6 +1,5 @@
 .compuchan-foot {
-  background-color: var(--negro);
-  color: white;
+  background-color: #0f3057;
   bottom: 0;
   right: 0;
   left: 0;
@@ -17,4 +16,4 @@
   width: 8%;
   margin-left: auto;
   margin-right: auto;
-}
+  }

@@ -15,6 +15,10 @@
 
 h1, h2, h3 {
 	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 50px;
 }
 
 .q-somos {
@@ -118,6 +122,8 @@ h1, h2, h3 {
 
 .pt-5, .py-5 {
 	padding-top: 3rem !important;
+
+	height: 100vh;
 }
 
 .mt-4, .my-4 {
@@ -130,6 +136,7 @@ h1, h2, h3 {
 
 .paginas-web {
 	align-self: center;
+	height: 100vh;
 }
 
 .pag-web-content {
