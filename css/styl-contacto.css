@@ -142,7 +142,7 @@ div p {
 /* p-errors */
 .error-msg{
   display: inline;
-  font-size: 0.6em;
+  font-size: 0.55em;
   margin: 1%;
   color: #fc4700;
 }
