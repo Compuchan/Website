@@ -42,11 +42,11 @@ tel.addEventListener("input", validOnWrite);
 message.addEventListener("input", validOnWrite);
 
 
-names.addEventListener("focus", validOnWrite);
-enterprise.addEventListener("focus", validOnWrite);
-email.addEventListener("focus", validOnWrite);
-tel.addEventListener("focus", validOnWrite);
-message.addEventListener("focus", validOnWrite);
+names.addEventListener("focus", focusing);
+enterprise.addEventListener("focus", focusing);
+email.addEventListener("focus", focusing);
+tel.addEventListener("focus", focusing);
+message.addEventListener("focus", focusing);
 
 
 SubmitButton.addEventListener("click", checkSubmit);
@@ -105,10 +105,13 @@ function validOnWrite() {
 	
 }
 
+
 function focusing() {
 
-		labelNames.classList.add("on-writing-label")
+labelNames.classList.add("on-writing-label")
+labelEnterprise.classList.add("on-writing-label")
 }
+
 
 
 function checkSubmit() {
