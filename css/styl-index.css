@@ -5,6 +5,13 @@
 	margin: auto;
 }
 
+.para-content{
+	font-size: 1.3rem;
+}
+.para-content i{
+	font-size: 1.3rem;
+}
+
 .portada{
 	height: 80vh;
 	display: grid;
@@ -171,7 +178,7 @@ h1, h2, h3 {
 .pag-web-content p a {
 	font-family: 'Montserrat', sans-serif;
 	text-decoration: none;
-	background-color: #F20519;
+	background-color: #00587a;
 	outline: none;
 	margin: 1% 0;
 	padding: 1%;
