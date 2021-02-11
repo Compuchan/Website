@@ -1,5 +1,5 @@
 .compuchan-foot {
-  background-color: #0f3057;
+  background-color: var(--azul-oscuro);
   bottom: 0;
   right: 0;
   left: 0;

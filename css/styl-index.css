@@ -1,3 +1,11 @@
+.quien{
+	padding-left: 15%;
+	padding-right: 15%;
+	height: 90vh;
+	background-color: var(--turquesa);
+	color: var(--beige);
+}
+
 .main-sec {
 	display: grid;
 	font-size: 18px;
@@ -34,7 +42,7 @@
 }
 
 .sub-portada-second{
-	padding: 24% 0 0 0;
+	padding: 20% 0 0 0;
 }
 
 .portada img {
@@ -178,7 +186,7 @@ h1, h2, h3 {
 .pag-web-content a {
 	font-family: 'Montserrat', sans-serif;
 	text-decoration: none;
-	background-color: #00587a;
+	background-color: var(--azul-claro);
 	outline: none;
 	padding: 1%;
 	width: 15%;
