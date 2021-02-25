@@ -44,7 +44,7 @@ const validForm = (e) => {
 const validField = (expresion, input, field) => {
 	if (expresion.test(input.value)) {
 		
-		
+		document.querySelector(`${field}`).classList.remove()
 	}
 
 }
@@ -58,9 +58,6 @@ function checkSubmit() {
 }
 
 
-function validOnSubmit() {
-
-	
 }
 
 
