@@ -58,8 +58,6 @@ function checkSubmit() {
 }
 
 
-}
-
 
 
 
