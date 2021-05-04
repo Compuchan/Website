@@ -89,12 +89,7 @@ button {
 }
 
 button:hover {
-<<<<<<< HEAD
-  background-color: #6f3ea8;
-  box-shadow: -3px 0 3px 1px #6f3ea8;
-=======
   background-color: var(--azul-oscuro);
->>>>>>> gabry
 }
 
 
@@ -117,26 +112,13 @@ div p {
 .error-label {
   top: 0;
   left: 0;
-<<<<<<< HEAD
-  color: #fc4700;
-=======
   color: var(--negro);
->>>>>>> gabry
   font-size: 16px;
   font-weight: bold;
 }
 
-<<<<<<< HEAD
-.label-ok {
-  top: 0;
-  left: 0;
-  color: #00a023;
-  font-size: 16px;
-  font-weight: bold;
-=======
 input:focus, textarea:focus, input:valid, textarea:valid {
   border-bottom: 1px solid var(--negro);
->>>>>>> gabry
 }
 
 /* inputs */
