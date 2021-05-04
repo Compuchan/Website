@@ -1,4 +1,4 @@
-h1{
+/*h1{
     text-align: center;
 }
 
@@ -15,4 +15,8 @@ a {
     border: none;
     color: #fff;
     cursor: pointer
+}*/
+
+section{
+    height: 80vh;
 }
