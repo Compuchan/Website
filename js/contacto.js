@@ -4,10 +4,10 @@ const inputs = document.querySelectorAll('#contact-form input');
 // RegEx
 const regex = {
 
-	name = /[A-Za-z]{1}[A-Za-z]/,
-	enterprise = /[A-Za-z]{1}[A-Za-z]/,
-	email = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,6})?$/,
-	tel = /[0-9]{8}/
+	regNombre = /[A-Za-z]{1}[A-Za-z]/,
+	regEmpresa = /[A-Za-z]{1}[A-Za-z]/,
+	regEmail = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,6})?$/,
+	regTelefono = /[0-9]{8}/
 }
 
 const campos = {

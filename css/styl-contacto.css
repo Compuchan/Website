@@ -54,6 +54,30 @@ input {
   font-size: 16px;
 }
 
+.label-default {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  color: #999;
+  transition: 0.3s;
+  pointer-events: none;
+}
+
+.input-default {
+  width: 100%;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #999;
+}
+
+.input-default:focus{
+  border-bottom: 1px solid var(--negro);
+}
+
+.error-msg {
+  display:none;
+}
+
 .textarea-container {
   grid-column: 1/ span 2;
 }
@@ -68,13 +92,6 @@ textarea {
   align-self: center;
   justify-self: center;
   width: 25%;
-}
-
-input, textarea {
-  width: 100%;
-  outline: none;
-  border: none;
-  border-bottom: 1px solid #999;
 }
 
 button {
@@ -92,33 +109,36 @@ button:hover {
   background-color: var(--azul-oscuro);
 }
 
-
-label {
-  position: absolute;
-  top: 20%;
-  left: 0;
-  color: #999;
-  transition: 0.3s;
-  pointer-events: none;
-}
-
-div p {
-  display:none;
+.ok-message{
+  display: none;
 }
 
 /* ----------------------------- Dinamic Styles --------------------------------- */
 
 /* labels */
-.error-label {
+
+.label-focus {
   top: 0;
   left: 0;
-  color: var(--negro);
+  color: #000000;
   font-size: 16px;
   font-weight: bold;
 }
 
-input:focus, textarea:focus, input:valid, textarea:valid {
-  border-bottom: 1px solid var(--negro);
+.label-ok{
+top: 0;
+left: 0;
+color: #00a023;
+font-size: 16px;
+font-weight: bold;
+}
+
+.label-bad {
+  top: 0;
+  left: 0;
+  color: #fc4700;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 /* inputs */
@@ -127,12 +147,13 @@ input:focus, textarea:focus, input:valid, textarea:valid {
   border-bottom: 1px solid #00a023;
 }
 
-.error-input{
+.input-bad{
   border-bottom: 1px solid #fc4700;
 }
 
 /* p-errors */
-.error-msg{
+
+.error-msg-show{
   display: inline;
   font-size: 0.55em;
   margin: 1%;
@@ -140,15 +161,12 @@ input:focus, textarea:focus, input:valid, textarea:valid {
 }
 
 /* button */
-.submit-ok{
+.ok-message-show{
   display: inline;
-  font-size: 0.6em;
+  font-size: 0.8em;
   margin: 1%;
   color: #00a023;
 }
-
-
-
 
 
 
