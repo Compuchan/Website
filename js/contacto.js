@@ -80,60 +80,55 @@ formulario.addEventListener('submit', (e) => {
 	e.preventDefault();
 
 	if (campos.nombre && campos.empresa && campos.email && campos.telefono && campos.mensaje) {
+
+		submitToAPI()
 		
-		formulario.reset()
-
-		document.getElementById('ok-message').classList.add('ok-message-show');
-		setTimeout(() => {
-			document.getElementById('ok-message').classList.remove('ok-message-show');
-		}, 5000);
-
-		document.querySelectorAll(label).classList.remove("label-ok");
-		document.querySelectorAll(input, textarea).classList.remove("input-ok");
-		
-	}
-}
-	
-);
-
-
-
-
-
-
-
+}})
 
 
 
 function submitToAPI() {
 
-	//const URL = "https://kg0114k1ek.execute-api.us-east-1.amazonaws.com/beta/contact-us";
+	const URL = "https://kg0114k1ek.execute-api.us-east-1.amazonaws.com/beta/contact-us";
 
 
 	let data = {
-		Nombre: names.value,
-		Empresa: enterprise.value,
-		Email: email.value,
-		Telefono: tel.value,
-		Mensaje: message.value
+		Nombre: inputs[0].value,
+		Empresa: inputs[1].value,
+		Email: inputs[2].value,
+		Telefono: inputs[3].value,
+		Mensaje: inputs[4].value
 	};
 
 	console.log("Data: ", data)
 
-	// fetch(URL, {
-	// 	method: 'POST', // or 'PUT'
-	// 	mode: 'no-cors',
-	// 	body: JSON.stringify(data), // data can be `string` or {object}!
-	// 	headers: {
-	// 		'Content-Type': 'application/json',
-	// 		'Accept': '*/*'
-	// 	}
-	// })
+	fetch(URL, {
+		method: 'POST', // or 'PUT'
+		mode: 'no-cors',
+		body: JSON.stringify(data), // data can be `string` or {object}!
+		headers: {
+			'Content-Type': 'application/json',
+			'Accept': '*/*'
+		}
+	})
 
-	// 	.catch(error => console.error('Error:', error))
-	// 	.then(response => {
-	// 		console.log('Success:', response)
-	// 		document.getElementById("contact-form").reset();
-	// 		alert("Su consulta fue enviada, pronto nos pondremos en contacto");
-	// 	});
+		.catch(error => console.error('Error:', error))
+		.then(response => {
+			console.log('Success:', response)
+
+			document.getElementById('ok-message').classList.add('ok-message-show');
+			setTimeout(() => {
+				document.getElementById('ok-message').classList.remove('ok-message-show');
+			}, 5000);
+	
+			document.querySelectorAll('label').forEach((label) => {
+				label.classList.remove("label-ok")
+			});
+	
+			inputs.forEach((input) => {
+				input.classList.remove("input-ok")
+			});
+
+			formulario.reset()
+		});
 }

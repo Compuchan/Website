@@ -6,13 +6,6 @@
 	color: var(--beige);
 }
 
-.main-sec {
-	display: grid;
-	font-size: 18px;
-	width: 75%;
-	margin: auto;
-}
-
 .para-content{
 	font-size: 1.3rem;
 }
@@ -55,6 +48,13 @@ h1, h2, h3 {
 	font-weight: bold;
 	font-size: 36px;
 	line-height: 50px;
+}
+
+.main-sec {
+	display: grid;
+	font-size: 18px;
+	width: 75%;
+	margin: auto;
 }
 
 .q-somos {

@@ -110,7 +110,7 @@ button:hover {
 }
 
 .ok-message{
-  display: none;
+  visibility: hidden;
 }
 
 /* ----------------------------- Dinamic Styles --------------------------------- */
@@ -162,9 +162,10 @@ font-weight: bold;
 
 /* button */
 .ok-message-show{
-  display: block;
-  font-size: 0.55em;
-  margin: 1%;
+  visibility: inherit;
+  margin-top: 3%;
+  text-align: center;
+  font-size: 0.8em;
   color: #00a023;
 }
 
