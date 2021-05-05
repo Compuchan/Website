@@ -59,7 +59,7 @@ input {
   top: 20%;
   left: 0;
   color: #999;
-  transition: 0.3s;
+  transition: 0.15s;
   pointer-events: none;
 }
 
@@ -162,8 +162,8 @@ font-weight: bold;
 
 /* button */
 .ok-message-show{
-  display: inline;
-  font-size: 0.8em;
+  display: block;
+  font-size: 0.55em;
   margin: 1%;
   color: #00a023;
 }

@@ -74,34 +74,34 @@
 		<div class="container">
 			<h1>Contactanos</h1>
 			<form action="" method="POST" id="contact-form">
-				<div>
+				<div id="grupo_nombre">
 					<label for="nombre" class="label-default">*Nombre</label>
 					<input name="nombre" type="text" id="nombre" class="input-default" autocomplete="no" required />
 					<p class="error-msg">El nombre debe tener letras y 2 o mas caracteres</p>
 				</div>
-				<div>
+				<div id="grupo_empresa">
 					<label for="empresa" class="label-default">*Empresa o web actual</label>
 					<input name="empresa" type="text" id="empresa" class="input-default" autocomplete="no" required />
 					<p class="error-msg">La empresa debe tener letras y 2 o mas caracteres</p>
 				</div>
-				<div>
+				<div id="grupo_email">
 					<label for="email" class="label-default">*E-mail</label>
 					<input name="email" type="email" id="email" class="input-default" required />
 					<p class="error-msg">Ingrese una direccion de correo válida</p>
 				</div>
-				<div>
+				<div id="grupo_telefono">
 					<label class="label-default">*Teléfono</label>
 					<input name="telefono" type="tel" id="telefono" class="input-default" required />
 					<p class="error-msg">Ingrese un numero telefonico válido</p>
 				</div>
-				<div class="textarea-container">
+				<div id="grupo_mensaje" class="textarea-container">
 					<label for="mensaje" class="label-default">*Mensaje</label>
 					<textarea name="mensaje" id="mensaje" class="input-default" required></textarea>
 					<p class="error-msg">Por favor, describanos lo que necesite. (no deje el mensaje vacio)</p>
 				</div>
 				<div class="button-container">
-				  <button id="submit-btn" type="button">Cuéntanos</button>
-				  <p class="ok-message">Su Consulta fue enviada, pronto nos pondermos en contacto!</p>
+				  <button id="submit-btn" type="submit">Cuéntanos</button>
+				  <p id="ok-message" class="ok-message">Su Consulta fue enviada, pronto nos pondermos en contacto!</p>
 				</div>
 			  </form>
 		</div>
