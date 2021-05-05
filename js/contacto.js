@@ -10,10 +10,13 @@ const regex = {
 	tel = /[0-9]{8}/
 }
 
-
-//Sumbmit
-
-const SubmitButton = document.querySelector("#submit-btn")
+const campos = {
+	nombre: false,
+	empresa: false,
+	email: false,
+	telefono: false,
+	mensaje: false
+}
 
 
 // EventListeners
@@ -34,8 +37,21 @@ SubmitButton.addEventListener("click", checkSubmit);
 
 const validForm = (e) => {
 	switch (e.target.name){
-
-
+		case "usuario":	
+			validField(regex.name, e.target, 'usuario')
+		break
+		case "usuario":	
+			validField(regex.name, e.target, 'usuario')
+		break
+		case "usuario":	
+			validField(regex.name, e.target, 'usuario')
+		break
+		case "usuario":	
+			validField(regex.name, e.target, 'usuario')
+		break
+		case "usuario":	
+			validField(regex.name, e.target, 'usuario')
+		break
 	}
 
 }
@@ -48,6 +64,7 @@ const validField = (expresion, input, field) => {
 	}
 
 }
+
 
 
 
