@@ -89,15 +89,20 @@ formulario.addEventListener('submit', (e) => {
 
 function submitToAPI() {
 
+	grecaptcha.ready(function() {
+		grecaptcha.execute('reCAPTCHA_site_key', {action: 'submit'}).then(function(token) {
+			
+	
 	const URL = "https://kg0114k1ek.execute-api.us-east-1.amazonaws.com/beta/contact-us";
-
+	
 
 	let data = {
 		Nombre: inputs[0].value,
 		Empresa: inputs[1].value,
 		Email: inputs[2].value,
 		Telefono: inputs[3].value,
-		Mensaje: inputs[4].value
+		Mensaje: inputs[4].value,
+		Token: token
 	};
 
 	console.log("Data: ", data)
@@ -130,5 +135,8 @@ function submitToAPI() {
 			});
 
 			formulario.reset()
+
 		});
+	});
+});
 }
