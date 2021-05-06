@@ -90,7 +90,7 @@ formulario.addEventListener('submit', (e) => {
 function submitToAPI() {
 
 	grecaptcha.ready(function() {
-		grecaptcha.execute('reCAPTCHA_site_key', {action: 'submit'}).then(function(token) {
+		grecaptcha.execute('reCAPTCHA_site_key', {action: 'contactForm'}).then(function(token) {
 			
 	
 	const URL = "https://kg0114k1ek.execute-api.us-east-1.amazonaws.com/beta/contact-us";
