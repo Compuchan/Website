@@ -99,8 +99,8 @@ function submitToAPI() {
 	let data = {
 		name:   inputs[0].value,
 		empresa:inputs[1].value,
-		phone:  inputs[2].value,
-		email:  inputs[3].value,
+		email:  inputs[2].value,
+		phone:  inputs[3].value,
 		desc:   inputs[4].value,
 		token:  token
 	};
