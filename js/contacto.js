@@ -1,5 +1,6 @@
 const formulario = document.getElementById('contact-form');
 const inputs = document.querySelectorAll('#contact-form input, textarea');
+const loader = document.querySelector("#loading");
 
 // RegEx
 const regex = {
@@ -89,6 +90,8 @@ formulario.addEventListener('submit', (e) => {
 
 function submitToAPI() {
 
+	loader.classList.add("display");
+
 	grecaptcha.ready(function() {
 		grecaptcha.execute('6Le4_uIZAAAAAFyxKQdbRq-s-KZbY69JdptF0dNw', {action: 'contactForm'}).then(function(token) {
 			
@@ -120,6 +123,7 @@ function submitToAPI() {
 		.catch(error => console.error('Error:', error))
 		.then(response => {
 			console.log('Success:', response)
+			loader.classList.remove("display");
 
 			document.getElementById('ok-message').classList.add('ok-message-show');
 			setTimeout(() => {
