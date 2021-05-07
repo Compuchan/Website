@@ -87,7 +87,6 @@ formulario.addEventListener('submit', (e) => {
 }})
 
 
-
 function submitToAPI() {
 
 	loader.classList.add("display");
